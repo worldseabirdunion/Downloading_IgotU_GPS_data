@@ -17,16 +17,3 @@ str(gps_data)
 # The dataframe can be output to a csv file or similar:
 write.csv(gps_data, file = "g11_details_processed.csv" )
 
-
-# Some example plots of how you might sort the data to exlude those where the error is high
-
-# png("altitude_error.png")
-par(mfrow=c(2,1))
-# See how the variation in altitude (thus likely error) grows with increasing ehpe
-plot(gps_data$elev~gps_data$ehpe, xlim = c(0,50), ylim = c(-150,150), ylab = "altitude (m)",
-     xlab = "Estimated horizontal positional error (EHPE)")
-
-# Similar for satellite number - you can see that with more satellites the spread narrows
-plot(gps_data$elev~gps_data$sat_n, ylim = c(-150,150), ylab = "altitude (m)",
-     xlab = "Number of satellites")
-# dev.off()
