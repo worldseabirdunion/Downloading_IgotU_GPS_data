@@ -7,6 +7,9 @@ Code and description of how to extract all data off the Mobile Action Igotu GPS 
 
 __*Note*__ If using these scripts, please aknowledge the author (Tom Evans) and direct others to where this code is located.
 
+This code is citable with doi:10.5281/zenodo.57892
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.57892.svg)](http://dx.doi.org/10.5281/zenodo.57892)
+
 *Downloading data from GPS devices and running R code to process this*
 
 ## 1. Downloading data from GPS device
